@@ -1,5 +1,4 @@
-public Class A0
-{//conflictfffff
+public Class A0{
 public Account createAccount(String name)  //method to create ac
 {//comment source line4 saijan14wkgggggnewddddd
 Account QDTest= new Account();
