@@ -1,4 +1,5 @@
 {
   "defaultMetadataPath" : "",
-  "defaultFeaturesPath" : { }
+  "defaultFeaturesPath" : { },
+  "test" : ""
 }
