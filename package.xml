@@ -9,4 +9,8 @@
         <members>A00000AFBXiHuNujdu</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>AnswersHome</members>
+        <name>ApexPage</name>
+    </types>
 </Package>
