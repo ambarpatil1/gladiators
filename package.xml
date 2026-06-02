@@ -11,6 +11,11 @@
     </types>
     <types>
         <members>AnswersHome</members>
+        <members>Apexpage1</members>
+        <members>Apexpage6</members>
+        <members>BandwidthExceeded</members>
+        <members>ChangePassword</members>
+        <members>CommunitiesLanding</members>
         <name>ApexPage</name>
     </types>
 </Package>
