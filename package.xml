@@ -7,6 +7,11 @@
         <name>AccountRelationshipShareRule</name>
     </types>
     <types>
+        <members>Testdata_Action_temp</members>
+        <members>test</members>
+        <name>ActionLinkGroupTemplate</name>
+    </types>
+    <types>
         <members>A0</members>
         <members>A000</members>
         <members>A00000</members>
