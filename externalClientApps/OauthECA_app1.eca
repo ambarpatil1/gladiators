@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalClientApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>saikumar.k@autorabit.com</contactEmail>
+    <contactPhone>9393522779</contactPhone>
+    <distributionState>Local</distributionState>
+    <isProtected>false</isProtected>
+    <label>OauthECA_app1</label>
+    <orgScopedExternalApp>00D280000019lse:OauthECA_app1</orgScopedExternalApp>
+</ExternalClientApplication>

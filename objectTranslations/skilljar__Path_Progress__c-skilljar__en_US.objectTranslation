@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Path Progress</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Path Progresses</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>skilljar__Completed_At__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Contact__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Enrolled_At__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Obfuscated_id__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Path__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Student__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

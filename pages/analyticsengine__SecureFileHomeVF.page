@@ -1,0 +1,19 @@
+<apex:page sidebar="false" showHeader="false" lightningStylesheets="true">
+
+    <apex:includeLightning />
+    <div id="lightning"></div>
+
+    <script>
+        $Lightning.use("analyticsengine:RedirectApp", function() {
+            $Lightning.createComponent(
+                "analyticsengine:RedirectWrapper",
+                {
+                    component: "analyticsengine:secureFileDelivery",
+                    params: JSON.stringify({})
+                },
+                "lightning",
+                function() {}
+            );
+        });
+    </script>
+</apex:page>

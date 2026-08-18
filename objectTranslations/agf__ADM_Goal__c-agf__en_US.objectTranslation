@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Program Goal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Program Goals</value>
+    </caseValues>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Current_Measurements__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Description_255__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__How_will_it_be_measured__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Status__c</name>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Met</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Met</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Met</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Team__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Theme__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

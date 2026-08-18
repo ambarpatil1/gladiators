@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SaiMasterDetailObject1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SaiMasterDetailObject1s</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>MasterDetailTestField1__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>MasterDetailTestField2__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

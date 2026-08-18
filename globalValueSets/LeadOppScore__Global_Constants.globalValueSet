@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>isEmpty</fullName>
+        <default>false</default>
+        <label>GlobalConstant.Empty()</label>
+    </customValue>
+    <customValue>
+        <fullName>isNull</fullName>
+        <default>false</default>
+        <label>GlobalConstant.isNull()</label>
+    </customValue>
+    <customValue>
+        <fullName>isNaN</fullName>
+        <default>false</default>
+        <label>GlobalConstant.isNaN()</label>
+    </customValue>
+    <customValue>
+        <fullName>isNumeric</fullName>
+        <default>false</default>
+        <label>GlobalConstant.isNumeric()</label>
+    </customValue>
+    <customValue>
+        <fullName>isDecimal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GlobalConstant.isDecimal()</label>
+    </customValue>
+    <customValue>
+        <fullName>isInteger</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GlobalConstant.isInteger()</label>
+    </customValue>
+    <masterLabel>Global Constants</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

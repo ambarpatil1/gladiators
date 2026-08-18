@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Synchronize Skilljar student data with Salesforce</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Skilljar Lightning</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>skilljar__Student__c</tabs>
+    <tabs>skilljar__Published_Course__c</tabs>
+    <tabs>skilljar__Course_Progress__c</tabs>
+    <tabs>skilljar__Enrollment__c</tabs>
+    <tabs>skilljar__Signup_Field__c</tabs>
+    <tabs>skilljar__Purchase__c</tabs>
+    <tabs>skilljar__Offer__c</tabs>
+    <tabs>skilljar__Access_Code__c</tabs>
+    <tabs>skilljar__Access_Code_Pool__c</tabs>
+    <tabs>skilljar__Promo_Code__c</tabs>
+    <tabs>skilljar__Promo_Code_Pool__c</tabs>
+    <tabs>skilljar__Domain_Membership__c</tabs>
+    <tabs>skilljar__Course__c</tabs>
+    <tabs>skilljar__Lesson__c</tabs>
+    <tabs>skilljar__Lesson_Progress__c</tabs>
+    <tabs>skilljar__Vilt_Session__c</tabs>
+    <tabs>skilljar__Vilt_Session_Event__c</tabs>
+    <tabs>skilljar__Vilt_Session_Registration__c</tabs>
+    <tabs>skilljar__Group__c</tabs>
+    <tabs>skilljar__Group_Membership__c</tabs>
+    <tabs>skilljar__Published_Course_Tag__c</tabs>
+    <tabs>skilljar__Tag__c</tabs>
+    <tabs>skilljar__Course_Series__c</tabs>
+    <tabs>skilljar__Course_Series_Published_Course__c</tabs>
+    <tabs>skilljar__Plan__c</tabs>
+    <tabs>skilljar__Path__c</tabs>
+    <tabs>skilljar__Published_Path__c</tabs>
+    <tabs>skilljar__Published_Path_Enrollment__c</tabs>
+    <tabs>skilljar__Path_Item__c</tabs>
+    <tabs>skilljar__Path_Item_Progress__c</tabs>
+    <tabs>skilljar__Path_Progress__c</tabs>
+    <tabs>skilljar__Plan_Tag__c</tabs>
+    <tabs>skilljar__Plan_Enrollment__c</tabs>
+    <tabs>skilljar__Promo_Code_Pool_Offer__c</tabs>
+    <tabs>skilljar__Course_Label__c</tabs>
+    <tabs>skilljar__Vilt_Session_Tag__c</tabs>
+    <tabs>skilljar__Training_Credit_Code__c</tabs>
+    <tabs>skilljar__Training_Credit_Code_Group__c</tabs>
+    <tabs>skilljar__Training_Credit_Code_Offer__c</tabs>
+    <tabs>skilljar__Group_Category__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

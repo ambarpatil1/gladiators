@@ -1,0 +1,46 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+    <!-- Import the Design System style sheet -->
+    <apex:slds />
+    <html>
+        <head>
+            <style type="text/css">
+                .main-heading {
+                    color: #1e293b;
+                    margin-bottom: .5rem !important;
+                }
+                .contact-info {
+                    background-color: #f1f5f9;
+                }
+                .slds-scope p {
+                    margin-bottom: 1rem;
+                }
+                .slds-scope p strong {
+                    font-weight: 800;
+                }
+            </style>
+        </head>
+        <body>
+            <!-- slds wrapper -->
+            <div class="slds-scope">
+                <div class="slds-m-around_x-large">
+                    <h1 class="slds-text-heading_large main-heading">You're Almost Done!</h1>
+                    <p>Thank you for installing the Report Sender app from CloudAnswers! You are now one step closer to sending reports to anyone. Setting up this app is really easy, but there are a few more steps to do after it's installed.</p>
+                    <p><strong>Please check out the installation guide for the rest of the steps.</strong></p>
+
+                    <a href="https://help.cloudanswers.com/en/articles/3192122-report-sender-installation-guide" target="_blank" class="slds-button slds-button_brand">Installation Guide</a><br />
+                </div>
+                <div class="contact-info">
+                    <div class="slds-m-horizontal_x-large slds-p-vertical_x-large">
+                        <h3 class="slds-text-heading_medium">We're Here to Help</h3>
+                        <div>If you need anything, please let us know. We want your reports to be delivered seamlessly.</div>
+                        <div>Knowledge base: <a href="https://help.cloudanswers.com/en/collections/1885035-report-sender" target="_blank">https://help.cloudanswers.com/</a></div>
+                        <div>Chat with us: <a href="https://cloudanswers.com/" target="_blank">https://cloudanswers.com/</a></div>
+                        <div>Email us: <a href="mailto:help@cloudanswers.com">help@cloudanswers.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
+    
+</apex:page>

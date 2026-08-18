@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User Business Hours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User Business Hours</value>
+    </caseValues>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Business_Hours__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__User__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>agf__Business_Hours_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>agf__User_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

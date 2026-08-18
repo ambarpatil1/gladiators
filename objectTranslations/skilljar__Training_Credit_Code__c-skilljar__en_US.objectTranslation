@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Training Credit Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Training Credit Codes</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>skilljar__Available_For_All_Offers__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Available_To_All_Students__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Code__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Credits_Total__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Credits_Used__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Expire_Content__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Obfuscated_Id__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Tracking_Identifier__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

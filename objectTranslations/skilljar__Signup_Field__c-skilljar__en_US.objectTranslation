@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Signup Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Signup Fields</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>skilljar__Contact__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Domain_Name__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Label__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Lead__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Obfuscated_Id__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Student__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>skilljar__Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

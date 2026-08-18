@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SaiAug1Obj1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SaiAug1Obj1s</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>User1Field__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>User1f1__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Userval1</name>
+    </validationRules>
+</CustomObjectTranslation>

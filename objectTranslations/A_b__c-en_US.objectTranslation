@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>A&amp;b</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>A&amp;bs</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>A_Bfeild__c</name>
+    </fields>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>RC1</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

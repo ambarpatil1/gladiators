@@ -1,0 +1,30 @@
+<apex:page >
+<head>
+<STYLE type="text/css">
+               H1.center {font-size: 16px; font-face: arial; text-align: center;}
+               BODY {font-face: arial; font-size:14px;}
+               P {font-size:16px; font-face:arial; padding-left:30px;}
+               div.center {font-size:14px; font-face:arial; text-align:center;}
+</STYLE>
+  <br></br>
+  <h1 id="header" class="center">Round Robin Lead Assignment (RRLA)</h1><br/>
+  <br></br>
+  </head>
+  <body>
+        <p><b><i>Flexible: </i></b>Supports multi round robin assignment groups with the ability to use custom fields for matching. </p>
+        <p><b><i>Robust: </i></b>Flag which leads should be assigned by RRLA from any lead channels including web to lead, Marketing integration leads, the Salesforce UI or mass imported leads.</p>
+        <p><b><i>Easy To Use: </i></b>Simple to set up, use, and monitor. </p>
+        <br></br>
+        <b>Installation and Setup</b><br/>
+        <a href="http://www.janaticonsulting.com/RRLA_Home" target="_blank">RRLA Documentation</a><br/>
+        <br></br>
+        <b>Have Questions</b><br/>
+        <a href="http://www.janaticonsulting.com/#!product-questions/o80gs" target="_blank">Contact Janati</a><br/>
+
+  <br></br>
+  </body>
+  <div id="footer" class="center">
+  Janati Consulting | <a href="http://www.janaticonsulting.com" target="_blank">www.janaticonsulting.com</a><br/>
+  </div>
+  
+</apex:page>

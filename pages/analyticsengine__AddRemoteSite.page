@@ -1,0 +1,12 @@
+<apex:page showHeader="false">
+    <html>
+        <head>
+            <title>Add Remote Site - Deprecated</title>
+        </head>
+        <body>
+            <div>
+                <b>This page has been deprecated.</b>
+            </div>
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,116 @@
+<apex:page controller="LeadOppScore.SetScoreLeadOpportunityController" sidebar="false" showHeader="false" >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+    <style>
+        //Styles applied on the page
+        
+        .apexp .pbTitle {display: none !important;}
+        .apexp .pbHeader table,
+        .apexp .pbHeader,.apexp .pbBottomButtons {border: none !important;}
+        .apexp .pbButton .btn,.apexp .pbButtonb .btn {padding: 10px;background: #2A739E;font-size: 14px;color: #fff;border-color: #2A739E;}
+        .apexp .bPageBlock {background: transparent !important; border: none !important;}
+        .apexp .secondaryPalette .pbBody {margin: 7px 12px 7px; border: solid #f0f0f0 3px; padding: 0px 0px 15px 0px; border-radius: 4px;}
+        .apexp .secondaryPalette .pbSubheader {padding: 10px!important; background-color: #2a739e;}
+        .apexp .secondaryPalette .pbSubheader h3 {color: #fff; font-size: 14px !important; font-weight: 600;}
+        .apexp .secondaryPalette .pbSubheader img:focus {outline: none;}
+        .apexp .secondaryPalette .pbSubsection {padding: 25px 15px; font-size: 14px;}
+        .apexp .secondaryPalette .pbSubsection table tr th.labelCol {width: 20%;line-height: 3;}
+        .apexp .secondaryPalette .pbSubsection table tr td.dataCol select {width: 190px; height: 35px; border: solid 1px #ddd; color: #777;outline: none;}
+        td.pbTitle {display: none !important;}
+        td.pbButton,td.pbButtonb {text-align: center; padding-top: 15px !important;}
+        body .bPageBlock .pbBody .dataCol {
+            border-right-color: transparent;
+            line-height: 3;
+        }
+        
+        .apexp .secondaryPalette .pbSubsection table.detailList tr th.labelCol{
+            line-height:3;
+        }
+        
+        .apexp {
+            max-width: 80%;
+            margin: 15px auto 0px;
+            box-shadow: 0 0 10px #e6e6e6;
+            background: #fff;
+        }
+        
+        .co_logo {
+            padding: 10px 15px;
+            border-bottom: solid 1px #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width:80%;
+            line-height:2;
+        }
+        .co_logo img {
+            width: 80px;
+        }
+        
+        .smalltxt {
+            font-size: 11px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .editsec {
+            margin-top: -15px;
+            box-shadow: 0px 8px 10px #e6e6e6;
+        }    
+        .apexp .windowViewMode-normal.oneContent.active.lafPageHost{
+        	width:90% !important;
+        	margin:auto !important;
+        }
+    </style>
+    <apex:form >
+        <apex:variable id="maxscore" value="{!100}" var="maxScore" />
+        <apex:pageBlock >
+            
+            <apex:pageBlockSection title="Max Score Info">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Lead Max Score</apex:outputLabel>
+                    <apex:outputText id="leadMaxScore" value="{!maxScore}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity Max Score</apex:outputLabel>
+                    <apex:outputText id="opportunityMaxScore" value="{!maxScore}" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Opportunity Lead">
+            <!--
+                <apex:pageBlockSection title="Opportunity Lead">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Lead Max Score</apex:outputLabel>
+                        <apex:outputField id="leadMaxScore" value="{!lMaxScore.Max_Score__c}" />
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel >Opportunity Max Score</apex:outputLabel>
+                        <apex:outputField id="opportunityMaxScore" value="{!oMaxScore.Max_Score__c}" />
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+            -->
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Select&nbsp;Object</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!selectedObject}">
+                        <apex:selectOptions value="{!objects}"></apex:selectOptions>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!updateScore}" value="Score All Data" />
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+        	<div class="apexp editsec">
+                <br/>
+        		<p class="slds-p-horizontal_small smalltxt">Powered By Emizentech</p>
+                <br/>&nbsp;<br/>
+            </div>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rollup Helper Object Realtime Processing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rollup Helper Object Realtime Processing</value>
+    </caseValues>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Allow_Child_Save_If_Parent_Save_Fails__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Asynchronous__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Disable_Trigger__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Disable_realtime__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Enhanced_Validation__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>rh2__Object_Full_Name__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>rh2__Prevent_DLDA__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

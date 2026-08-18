@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Board User Preferences</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Board User Preferences</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>agf__Board_Type__c</name>
+        <picklistValues>
+            <masterLabel>Kanban</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprint</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Filters__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Team__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__User_Filter__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__User__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

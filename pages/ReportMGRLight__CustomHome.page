@@ -1,0 +1,288 @@
+<apex:page controller="ReportMGRLight.ReportDashboardController">
+    <apex:slds />
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+
+    <style>
+    
+        .chart {
+            width: 120px;  /* Set the desired width */
+            height: 120px; /* Set the desired height */
+            position: relative;
+            margin-left: auto;
+        }
+    .chart:hover {
+        display: inline-block;
+        transition: transform 0.3s ease; 
+        transform: scale(1.2); 
+    }
+    .cool-text {
+        background-color: #F3F2F5;
+        color: #4682B4 !important;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+    @keyframes jump {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-30px); }
+        100% { transform: translateY(0); }
+    }
+    .jumping-image {
+        cursor: pointer;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-right-image {
+        position: absolute;
+        top: 150px;
+        right: 120px;
+        max-width: 900px;
+        max-height: 350px;
+    }
+    .requestButton {
+        margin: 5px;
+        appearance: button;
+        background-color: #8694f4;
+        border: 1px solid #d4d2d2;
+        border-radius: .5rem;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        outline: 2px solid transparent;
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: none;
+        transition: all .1s cubic-bezier(.4, 0, .2, 1);
+        user-select: none;
+        touch-action: manipulation;
+        box-shadow: -6px 8px 10px rgb(81 41 10 / 11%), 0 2px 2px rgb(81 41 10 / 10%);
+    }
+    .requestButton img {
+        margin-right: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .button-logo-container {
+        text-align: center;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .button-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .text-content {
+        flex: 1;
+        margin-right: 50px; /* Add margin for spacing between text and chart */
+    }
+    </style>
+
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-2 slds-p-horizontal_medium slds-p-vertical_medium">
+            <apex:image id="theLogoImage" value="{!$Resource.ReportMGRLight__logo}" width="200" height="60"/>
+        </div>
+        <div class="slds-col slds-size_1-of-2 slds-text-align_right slds-p-horizontal_medium slds-p-vertical_medium">
+            <apex:image id="theImage" value="{!$Resource.ReportMGRLight__ReportManagerAppLogo}" width="150" height="60"/>
+        </div>
+    </div>
+   <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+            <div class="slds-card slds-theme_default">
+                <header class="slds-card__header slds-theme_shade">
+                    <h2 class="slds-text-heading_medium slds-truncate">Reports Not Run in Last 3 Months</h2>
+                </header>
+                <div class="slds-card__body slds-theme_shade slds-p-around_medium">
+                    <div class="card-content">
+                        <div class="text-content">
+                            <div class="slds-text-heading_large">Count of reports in your org: <span class="cool-text">{!reportCount3Months}</span></div>
+                            <div class="slds-text-heading_medium">Estimated Time To Clean Reports Manually: <span class="cool-text" id="time3Months"></span></div>
+                            <div class="slds-text-heading_medium">Or just 1 click in <span class="cool-text">Report Manager Pro</span></div>
+                        </div>
+                        <div id="progress3Months" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+            <div class="slds-card slds-theme_default">
+                <header class="slds-card__header slds-theme_shade">
+                    <h2 class="slds-text-heading_medium slds-truncate">Reports Not Run in Last 6 Months</h2>
+                </header>
+                <div class="slds-card__body slds-theme_shade slds-p-around_medium">
+                    <div class="card-content">
+                        <div class="text-content">
+                            <div class="slds-text-heading_large">Count of reports in your org: <span class="cool-text">{!reportCount6Months}</span></div>
+                            <div class="slds-text-heading_medium">Estimated Time To Clean Reports Manually: <span class="cool-text" id="time6Months"></span></div>
+                            <div class="slds-text-heading_medium">Or just 1 click in <span class="cool-text">Report Manager Pro</span></div>
+                        </div>
+                        <div id="progress6Months" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+            <div class="slds-card slds-theme_default">
+                <header class="slds-card__header slds-theme_shade">
+                    <h2 class="slds-text-heading_medium slds-truncate">Reports Not Run in Last 12 Months</h2>
+                </header>
+                <div class="slds-card__body slds-theme_shade slds-p-around_medium">
+                    <div class="card-content">
+                        <div class="text-content">
+                            <div class="slds-text-heading_large">Count of reports in your org: <span class="cool-text">{!reportCount12Months}</span></div>
+                            <div class="slds-text-heading_medium">Estimated Time To Clean Reports Manually: <span class="cool-text" id="time12Months"></span></div>
+                            <div class="slds-text-heading_medium">Or just 1 click in <span class="cool-text">Report Manager Pro</span></div>
+                        </div>
+                        <div id="progress12Months" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-col slds-size_1-of-4 slds-p-around_small">
+            <div class="slds-card slds-theme_default">
+                <header class="slds-card__header slds-theme_shade">
+                    <h2 class="slds-text-heading_medium slds-truncate">Total number of reports</h2>
+                </header>
+                <div class="slds-card__body slds-theme_shade slds-p-around_medium">
+                    <div class="card-content">
+                        <div class="text-content">
+                            <div class="slds-text-heading_large">Count of reports in your org: <span class="cool-text">{!reportCount13Months}</span></div>
+                            <div class="slds-text-heading_medium">Estimated Time To Clean Reports Manually: <span class="cool-text" id="time13Months"></span></div>
+                            <div class="slds-text-heading_medium">Or just 1 click in <span class="cool-text">Report Manager Pro</span></div>
+                        </div>
+                        <div id="progressTotalReports" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size_1-of-1 slds-p-around_medium">
+                                <div class="top-right-image">
+                                    <apex:image id="theApp" value="{!$Resource.ReportMGRLight__ReportManagerPro2}" width="900" height="350"/>
+                                        </div>
+                                    </div>
+                                    </div>
+    </div>
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-text-align_center slds-p-around_medium button-logo-container">
+            <apex:form >
+                <div class="button-image-container">
+                    <apex:commandLink action="{!sendBusinessCaseEmail}" styleClass="requestButton">
+                        <img src="{!URLFOR($Resource.emailLogo)}" alt="Email Logo" />
+                        <span>Generate Business Case For Purchasing Pro</span>
+                    </apex:commandLink>
+                </div>
+            </apex:form>
+            <div class="jumping-image" onclick="redirectToLink('https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FMnaTUAT');">
+                <p style="font-weight: bold; color: black; font-size: 15px;">From The Makers Of:</p>
+                <apex:image id="theApplogojump" value="{!$Resource.ReportMGRLight__rmprologo}" style="width: 200px; height: 125px;" />
+            </div>
+        </div>
+    </div>
+
+   
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var count3Months = {!reportCount3Months};
+                    var count6Months = {!reportCount6Months};
+                    var count12Months = {!reportCount12Months};
+                    var count13Months = {!reportCount13Months};
+                    
+                    var timeInSeconds = 120;
+                    
+                    var time3Months = count3Months * timeInSeconds;
+                    var time6Months = count6Months * timeInSeconds;
+                    var time12Months = count12Months * timeInSeconds;
+                    var time13Months = count13Months * timeInSeconds;
+                    
+                    document.getElementById("time3Months").textContent = formatTime(time3Months);
+                    document.getElementById("time6Months").textContent = formatTime(time6Months);
+                    document.getElementById("time12Months").textContent = formatTime(time12Months);
+                    document.getElementById("time13Months").textContent = formatTime(time13Months);
+                    
+                    createProgressBar('progress3Months', count3Months / count13Months);
+                    createProgressBar('progress6Months', count6Months / count13Months);
+                    createProgressBar('progress12Months', count12Months / count13Months);
+                    createProgressBar('progressTotalReports', count13Months / count13Months);
+                });
+    function createProgressBar(elementId, progress) {
+        var bar = new ProgressBar.Circle('#' + elementId, {
+            color: '#4682B4',  // Color of the progress
+            trailColor: '#d3d3d3',  // Color of the remaining part of the circle
+            strokeWidth: 5,  // Width of the progress stroke
+            trailWidth: 5,  // Width of the remaining stroke (background)
+            duration: 1400,
+            easing: 'bounce',
+            text: {
+                autoStyleContainer: false
+            },
+            from: { color: '#4682B4', width: 5 },
+            to: { color: '#4682B4', width: 5 },
+            step: function (state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+                circle.path.setAttribute('stroke-width', state.width);
+                
+                var value = Math.round(circle.value() * 100);
+                if (value === 0) {
+                    circle.setText('');
+                } else {
+                    circle.setText(value + '%');
+                }
+            },
+            // Adjust the radius to make the circle smaller
+            radius: 45  // Set the desired radius
+        });
+        
+        // Center the text in the middle of the circle
+        bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+        bar.text.style.fontSize = '1rem';
+        bar.text.style.position = 'absolute';
+        bar.text.style.top = '50%';
+        bar.text.style.left = '50%';
+        bar.text.style.transform = 'translate(-50%, -50%)';
+        
+        bar.animate(progress);  // Number from 0.0 to 1.0
+    }
+    
+    function formatTime(timeInSeconds) {
+        var hours = Math.floor(timeInSeconds / 3600);
+        if (hours > 0) {
+            return hours + " hours";
+        } else {
+            return "1 hour";
+        }
+    }
+    
+    function redirectToLink(link) {
+        window.open(link, '_blank');
+    }
+    </script>
+</apex:page>

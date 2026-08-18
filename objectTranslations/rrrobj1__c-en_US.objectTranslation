@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>rrrobj1</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>rrrobj1s</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>Picklistf1__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Picklistf2__c</name>
+    </fields>
+    <recordTypes>
+        <label></label>
+        <name>rct</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>rct1</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

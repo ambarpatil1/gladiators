@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Score Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Score Settings</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Activate__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Check_Field__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Field_Name__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Formula__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Max_Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Object__c</name>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Selected_Users__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Setting_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assign Owner</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic Validation Rule</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__User__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>LeadOppScore__Validation_Rule__c</name>
+        <picklistValues>
+            <masterLabel>Email Exists</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Number Exists</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid Email</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid Phone Number</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>LeadOppScore__Your_Formula__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>LeadOppScore__New</name>
+    </webLinks>
+</CustomObjectTranslation>

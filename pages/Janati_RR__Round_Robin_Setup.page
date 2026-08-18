@@ -1,0 +1,78 @@
+<apex:page controller="Janati_RR.RoundRobinSetupController" >
+
+	<apex:form >
+		 <apex:pageBlock >
+			<apex:pageBlockButtons >
+	        	<apex:commandButton value="Save" action="{!save}"/>
+	        	<apex:commandButton value="Cancel" action="{!cancel}"/>
+	        </apex:pageBlockButtons>
+	        <apex:pageMessages />
+	        <apex:pageBlockSection collapsible="false" title="Round Robin Limits" columns="2">
+                <apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Max Count Custom Matching Fields" for="maxFields"/>
+                	<apex:outputText value="{0, number, 0}">
+                		<apex:param value="{!configSetting.Janati_RR__Max_Count_Custom_Matching_Fields__c}"/>
+               		</apex:outputText>
+            	</apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Max Group Members per Assignment" for="leadField"/>
+                	<apex:outputText value="{0, number, 0}">
+                		<apex:param value="{!configSetting.Janati_RR__Max_Group_Members_per_Assignment__c}"/>
+                	</apex:outputText>
+            	</apex:pageBlockSectionItem>
+            	
+            	<apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Max Round Robin Assignments (Active)" for="leadField"/>
+                	<apex:outputText value="{0, number, 0}">
+                	 	<apex:param value="{!configSetting.Janati_RR__Max_Round_Robin_Assignments__c}" />
+               	 	</apex:outputText>
+            	</apex:pageBlockSectionItem>
+                
+			</apex:pageBlockSection>
+	        
+		 	<apex:pageBlockSection collapsible="false" title="Lead Assignment Rule Setting" columns="1">
+		 		<apex:facet name="header">
+		 			<h1>Lead Assignment Rule Setting</h1>
+		 			<p>Check this field for the Round Robin process to always call the active lead assignment rule after Round Robin Assignment process is called</p>
+		 		</apex:facet>
+		 			
+		 		<apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Always Call Active Assignment Rule" for="cbForceAssignmentRule"/>
+                    <apex:inputCheckbox value="{!forceAssignmentRule.Janati_RR__Always_Call_Active_Assignment_Rule__c}" id="cbForceAssignmentRule"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+		 
+		 	
+			<apex:pageBlockSection collapsible="false" title="Lead Matching" columns="2">
+				<apex:facet name="header">
+		 			<h1>Lead Matching</h1>
+		 			<p>Select the Lead Field and the Round Robin field to match from the dropdown list. Only single/multi select picklist fields from the Lead and multi-select picklist fields from the Round Robin Assignment are supported.</p>
+		 		</apex:facet>
+				
+				
+		 		<apex:repeat value="{!matchSettings}" var="setting" id="theRepeat">
+		 			<apex:pageBlockSectionItem >
+                    	<apex:outputLabel value="Lead Field" for="leadField"/>
+                    	
+						<apex:selectList size="1" value="{!setting.Name}" multiselect="false" required="true">
+				            <apex:selectOptions value="{!leadSingleSelects}"/>
+				        </apex:selectList>
+                    	
+
+                	</apex:pageBlockSectionItem>
+                	<apex:pageBlockSectionItem >
+                    	<apex:outputLabel value="Round Robin Field" for="roundRobinField"/>
+                    	<apex:selectList id="roundRobinField" size="1" value="{!setting.Janati_RR__Round_Robin_Assignment_Field__c}" multiselect="false" required="true">
+				            <apex:selectOptions value="{!rrMultiSelects}"/>
+				        </apex:selectList>
+                	</apex:pageBlockSectionItem>
+				</apex:repeat>
+				
+			</apex:pageBlockSection>
+			
+		</apex:pageBlock>
+	</apex:form>
+
+</apex:page>

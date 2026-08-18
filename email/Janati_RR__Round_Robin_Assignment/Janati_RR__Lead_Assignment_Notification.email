@@ -1,0 +1,11 @@
+{!Lead.Name} from {!Lead.Company has been assigned to 
+{!Lead.OwnerFirstName} on {!Today} 
+
+Lead Details: 
+Phone: {!Lead.Phone} 
+Email: {!Lead.Email} 
+City: {!Lead.City} 
+State: {!Lead.State} 
+
+Click here to access the lead (login to Salesforce required) 
+{!Lead.Link}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reports History Tracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reports History Trackings</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__JSON1__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__JSON2__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__JSON3__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__JSON4__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__JSON5__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>ReportMGRLight__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArchivedReports</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReportsCount</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnarchivedReports</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

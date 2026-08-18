@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Exception Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Exception Requests</value>
+    </caseValues>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Assigned_To__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Decision_Explanation__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Investigation__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Reason_for_Request__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Requestor__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>agf__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent Investigation Resolved</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>agf__Type__c</name>
+        <picklistValues>
+            <masterLabel>Acknowledgment of a Severity 4 Investigation</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After hours request for after hours resources</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>After hours triage/diagnosis of Sev 2</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>During business hours request for after hours resources/communication</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More status updates/assigned resources</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLA violated by Support</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLA violated by T&amp;P</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Severity level upgrade</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>agf__Dec_Explanation_Empty_Status_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>agf__Dec_Explanation_Empty_With_Status_Reject</name>
+    </validationRules>
+</CustomObjectTranslation>
