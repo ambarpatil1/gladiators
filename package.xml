@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>64.0</version>
-    <types>
-        <members>Lead_Share</members>
-        <members>Share_opportunity</members>
-        <name>AccountRelationshipShareRule</name>
-    </types>
-    <types>
-        <members>Testdata_Action_temp</members>
-        <members>test</members>
-        <name>ActionLinkGroupTemplate</name>
-    </types>
-    <types>
-        <members>A0</members>
-        <members>A000</members>
-        <members>A00000</members>
-        <members>A00000ACbkyADU</members>
-        <members>A00000AFBXiHuNujdu</members>
-        <name>ApexClass</name>
-    </types>
 </Package>
