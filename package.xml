@@ -1,7 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>64.0</version>
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>65.0</version>
     <types>
+        <members>Lead_Share</members>
+        <members>Share_opportunity</members>
+        <name>AccountRelationshipShareRule</name>
+    </types>
+    <types>
+        <members>Testdata_Action_temp</members>
+        <members>test</members>
+        <name>ActionLinkGroupTemplate</name>
+    </types>
+    <types>
+        <members>A</members>
         <members>A0</members>
         <members>A000</members>
         <members>A00000</members>
@@ -1734,5 +1744,17 @@
         <members>test1yrt Profile</members>
         <members>test4 Profile</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <members>ARProfile10_profilePasswordPolicy1559371796234</members>
+        <members>ARProfile1_profilePasswordPolicy1520692602097</members>
+        <members>ARProfile2_profilePasswordPolicy1522166719392</members>
+        <members>PT1_profilePasswordPolicy1487029411628</members>
+        <members>QAProfile1_profilePasswordPolicy1605676608968</members>
+        <members>Relationship_Manager_profilePasswordPolicy1649170565207</members>
+        <members>Saiprofile2_profilePasswordPolicy1623821318066</members>
+        <members>doctest1_profilePasswordPolicy1674668058944</members>
+        <members>shamprofile_profilePasswordPolicy1691590310715</members>
+        <name>ProfilePasswordPolicy</name>
     </types>
 </Package>
