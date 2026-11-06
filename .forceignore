@@ -1,0 +1,8 @@
+# S8 deletions.
+#
+# These rules name a class that the NEXT commit deletes. A "D" entry is not a
+# file being sent, it is the instruction to remove one already in the org, so
+# .forceignore must not suppress it - otherwise the file is stranded in the org
+# for good. Expect the delete to go through despite these rules.
+classes/ToDelete.cls
+classes/ToDelete.cls-meta.xml
