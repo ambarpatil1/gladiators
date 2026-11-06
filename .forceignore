@@ -1,0 +1,10 @@
+# S7 this file has comments and blank lines and nothing else.
+#
+# JGit turns a whitespace-only line into a rule that matches nothing, so
+# counting rules naively would make ARM claim it has work to do. It does not.
+# Expected: no filtering, no "applying N rule(s)" line, deployment identical to
+# a branch with no .forceignore at all.
+
+# lwc/**/*.ts        <- commented out, so NOT a rule
+
+   
