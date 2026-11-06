@@ -1,0 +1,4 @@
+# S1 smoke test.
+# Expected: exactly two files are left out, the bundle still deploys.
+lwc/**/*.ts
+**/__tests__/

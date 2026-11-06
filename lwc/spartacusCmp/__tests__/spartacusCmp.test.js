@@ -1,0 +1,1 @@
+describe('spartacusCmp', () => { it('renders', () => {}); });
