@@ -1,0 +1,16 @@
+# S6 a realistic repository: 12000+ files across 40+ metadata types.
+
+# Jest suites beside the components they test, in both bundle formats.
+lwc/**/__tests__/
+aura/**/__tests__/
+
+# TypeScript sources inside lwc only. A .ts inside staticresources is somebody's
+# shipped asset, not tooling, and must survive this rule.
+lwc/**/*.ts
+
+# Editor and linter config that lives in the bundle.
+**/.eslintrc.json
+**/jsconfig.json
+
+# One rule, one whole metadata type: 298 report files in a single line.
+reports/
