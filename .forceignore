@@ -1,0 +1,22 @@
+# S5 gitignore semantics.
+
+# (a) A rule inside an excluded directory does NOT bring the file back. Git
+#     never descends into an excluded folder, so BOTH files here are dropped,
+#     including the one the ! names. This is the trap.
+scripts/
+!scripts/keep.sh
+
+# (b) A leading slash anchors to the repo root.
+/classes/A0.cls
+
+# (c) A pattern containing a slash is anchored even without a leading one, and
+#     a single * does not cross a directory separator. docs/a.md goes,
+#     docs/sub/b.md stays.
+docs/*.md
+
+# (d) A trailing slash means directories only. There is a FILE called tmp at
+#     the root; it must survive.
+tmp/
+
+# (e) Matching is case sensitive. classes/A00000.cls must survive this.
+classes/a00000.cls
