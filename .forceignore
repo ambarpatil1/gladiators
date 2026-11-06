@@ -1,0 +1,14 @@
+# S3 negation and emptied bundles.
+
+# Drop every .scss inside an lwc bundle...
+lwc/**/*.scss
+# ...except this one. Git's last-match-wins; ARM must agree.
+!lwc/keepMe/keepMe.scss
+
+# This reaches the only source file lwc/tsOnly has. Expect a warning naming
+# that folder: its -meta.xml ships with nothing to deploy.
+lwc/**/*.ts
+
+# Names the .cls but not its -meta.xml. Expect the orphan to ship. This is the
+# rule doing what it says, not a bug, but it is worth seeing once.
+classes/ScratchOnly.cls
