@@ -1,0 +1,14 @@
+# S4 at scale: this branch holds 3300+ files and these rules match a handful of
+# them. Confirms the filter is a no-op for everything unmatched and costs
+# nothing noticeable over a large tree.
+classes/A00000ACbkyADU.cls
+classes/A00000ACbkyADU.cls-meta.xml
+classes/A00000AFBXiHuNujdu.cls
+classes/A00000AFBXiHuNujdu.cls-meta.xml
+
+# A rule matching nothing in this repo. It must not change any other decision.
+**/*.nothingmatchesthis
+
+# Folders this branch does not have. Also no-ops.
+lwc/**/*.ts
+**/__tests__/
