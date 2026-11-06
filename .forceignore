@@ -1,0 +1,12 @@
+# S2 anchored paths and tooling files.
+#
+# One named class, both halves of the pair. Naming only the .cls would ship an
+# orphan -meta.xml, which is the behaviour tested on the Maximus branch.
+classes/A0.cls
+classes/A0.cls-meta.xml
+
+# Tooling that lives inside the bundle. Dotfiles included.
+**/.eslintrc.json
+**/tsconfig.json
+**/jest.config.js
+**/__tests__/
