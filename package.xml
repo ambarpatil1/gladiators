@@ -1,16 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>65.0</version>
     <types>
         <members>A</members>
         <members>A0</members>
+        <members>A00</members>
         <members>AccountGreeting</members>
         <members>AccountGreetingTest</members>
+        <members>ArmSampleCalculator</members>
+        <members>BranchManagementService</members>
         <members>DevSeedData</members>
+        <members>OrderCalculationHelper</members>
+        <members>OrderCalculationHelperTest</members>
+        <members>SampleUtility</members>
+        <members>SampleUtilityTest</members>
+        <members>TaskUtil</members>
+        <members>TaskUtilTest</members>
+        <members>devedapp__DeveloperEditionUtils</members>
+        <members>devedapp__DeveloperEditionUtilsTest</members>
+        <members>devedapp__PostInstallScript</members>
+        <members>devedapp__PostInstallScriptTest</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>greetingCard</members>
         <name>LightningComponentBundle</name>
     </types>
-    <version>62.0</version>
 </Package>
