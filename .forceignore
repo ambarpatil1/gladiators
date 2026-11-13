@@ -16,5 +16,5 @@ classes/DevSeedData.cls
 classes/DevSeedData.cls-meta.xml
 
 # Kept from your EZ-Commit test: A0 exists in ScfgOrg2 and must not come back.
-classes/A0.cls
+classes/A00.cls
 classes/A0.cls-meta.xml
