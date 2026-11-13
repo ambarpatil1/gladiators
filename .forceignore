@@ -1,0 +1,20 @@
+# AR-40653 realtime scenarios
+#
+# Salesforce CLI defaults: the CLI writes these into every new project.
+# package.xml is in here on purpose - ARM must still deploy with a manifest.
+package.xml
+**/jsconfig.json
+**/.eslintrc.json
+**/__tests__/**
+
+# The Greeting Card component is written in TypeScript. Salesforce gets the
+# compiled .js; the .ts source lives in git and must never be sent.
+lwc/**/*.ts
+
+# Developer-only Apex: seed data for scratch orgs and local debugging.
+classes/DevSeedData.cls
+classes/DevSeedData.cls-meta.xml
+
+# Kept from your EZ-Commit test: A0 exists in ScfgOrg2 and must not come back.
+classes/A0.cls
+classes/A0.cls-meta.xml

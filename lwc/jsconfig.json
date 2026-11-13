@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": { "c/*": ["*"] }
+    },
+    "include": ["**/*"],
+    "typeAcquisition": { "include": ["jest"] }
+}
