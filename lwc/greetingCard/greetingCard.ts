@@ -10,4 +10,8 @@ export default class GreetingCard extends LightningElement {
     get message(): string {
         return this.greeting?.data ?? 'Hello, there!';
     }
+
+    get isLoading(): boolean {
+        return !this.greeting?.data && !this.greeting?.error;
+    }
 }

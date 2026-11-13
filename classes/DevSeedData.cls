@@ -11,4 +11,12 @@ public class DevSeedData {
         }
         insert accounts;
     }
+
+    public static void createSampleContacts(Id accountId, Integer howMany) {
+        List<Contact> contacts = new List<Contact>();
+        for (Integer i = 1; i <= howMany; i++) {
+            contacts.add(new Contact(AccountId = accountId, LastName = 'Sample ' + i));
+        }
+        insert contacts;
+    }
 }
