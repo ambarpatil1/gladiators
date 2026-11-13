@@ -5,6 +5,7 @@ classes/A00000ACbkyADU.cls
 classes/A00000ACbkyADU.cls-meta.xml
 classes/A00000AFBXiHuNujdu.cls
 classes/A00000AFBXiHuNujdu.cls-meta.xml
+**/136378.profile
 
 # A rule matching nothing in this repo. It must not change any other decision.
 **/*.nothingmatchesthis
