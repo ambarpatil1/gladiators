@@ -13,3 +13,4 @@ classes/A00000AFBXiHuNujdu.cls-meta.xml
 # Folders this branch does not have. Also no-ops.
 lwc/**/*.ts
 **/__tests__/
+**/136378.profile
