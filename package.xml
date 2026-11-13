@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <version>65.0</version>
     <types>
         <members>A</members>
         <members>A0</members>
+        <members>A00</members>
         <members>AccountGreeting</members>
         <members>AccountGreetingTest</members>
         <members>DevSeedData</members>
@@ -12,5 +13,4 @@
         <members>greetingCard</members>
         <name>LightningComponentBundle</name>
     </types>
-    <version>62.0</version>
 </Package>
